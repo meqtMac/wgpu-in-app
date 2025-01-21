@@ -5,6 +5,7 @@
 //
 
 import UIKit
+import WgpuDemoCore
 
 class ViewController: UIViewController {
     @IBOutlet private var metalV: MetalView!

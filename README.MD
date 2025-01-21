@@ -31,24 +31,20 @@ rustup target add aarch64-apple-ios
 # Add Apple Simulator target
 # M1+ Mac
 rustup target add aarch64-apple-ios-sim
+
+# Add x86_64 simulator target
+rustup target add x86_64-apple-ios
 ```
 
-### Build for Apple real device
+### Build for Apple device (real and simulator)
 
 ```sh
-# Build for iOS | iPadOS
-sh ./apple_lib_build.sh --release
+sh ./apple_xcframework.sh
 ```
 
 Then, Open `Apple/wgpu_in_App.xcodeproj` with Xcode and run on iPhone、iPad.
 
 ### Build for visionOS Simulator
-
-```sh
-sh ./apple_lib_build.sh aarch64-apple-ios-sim --release
-```
-
-Then, Open `Apple/wgpu_in_App.xcodeproj` with Xcode 15 Beta 2+ and run on visionOS Simulator.
 
 ### About Rust and Swift Interaction
 
