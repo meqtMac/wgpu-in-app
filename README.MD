@@ -39,6 +39,10 @@ rustup target add x86_64-apple-ios
 ### Build for Apple device (real and simulator)
 
 ```sh
+## release (simulator 只会编译debug模式)
+sh ./apple_xcframework.sh --release
+
+## debug
 sh ./apple_xcframework.sh
 ```
 

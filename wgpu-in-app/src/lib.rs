@@ -13,7 +13,6 @@ pub use ffi::*;
 pub mod desktop;
 
 // Initialize logging in platform dependant ways.
-#[cfg(not(target_os = "ios"))]
 fn init_logger() {
     cfg_if::cfg_if! {
         if #[cfg(target_os = "android")] {
